@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>CodeCats</title>
+    <title>Yacks</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,7 +26,6 @@
     />
     <link rel="manifest" href="images/x-icon/site.webmanifest" />
     <link rel="stylesheet" href="css/three-dots.min.css" />
-    <link rel="stylesheet" href="css/splide.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -39,21 +38,7 @@
         </div>
         <div class="menu">
           <a
-            href="https://discord.gg/A9CnsVzzkZ"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="images/header/discord.webp" alt="Discord" />
-          </a>
-          <a
-            href="https://twitter.com/codeSTACKr"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="images/header/twitter.webp" alt="Twitter" />
-          </a>
-          <a
-            href="https://opensea.io/collection/codecats"
+            href="https://opensea.io/collection/yackers"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -66,12 +51,23 @@
       </div>
     </header>
 
+    <section class="mainImage">
+      <img src="images/anim.gif" />
+    </section>
+
     <section class="container not-connected">
       <div>
         <h2 id="welcomeH2">Connect to MetaMask to Get Started</h2>
-        <h1 id="welcomeH1">Welcome to the CodeCats NFT Project!</h1>
+        <h1 id="welcomeH1">Welcome to the Yackers NFT Project!</h1>
         <p id="welcomeP">
-          The CodeCats NFT Project is a decentralized, open-source project that aims to demonstrate how to develope and launch your own NFT Collection. Follow step by step on the <a href="https://youtube.com/codestackr"  target="_blank" rel="noopener noreferrer">codeSTACKr</a> YouTube channel.
+          Created with
+          <a
+            href="https://youtube.com/codestackr"
+            target="_blank"
+            rel="noopener noreferrer"
+            >codeSTACKr</a
+          >
+          YouTube channel.
         </p>
       </div>
     </section>
@@ -104,7 +100,7 @@
         </div>
         <h1 id="mainHeading">NFT Drop Coming Soon!!</h1>
         <p id="mainText">
-          A new batch of cute cats will be available very soon!
+          A new batch of cute yacks will be available very soon!
         </p>
         <a
           id="actionButton"
@@ -131,7 +127,9 @@
           </div>
           <div class="mint-qty">
             <span>
-              <button class="input-number-decrement btn" id="mintDecrement">–</button>
+              <button class="input-number-decrement btn" id="mintDecrement">
+                –
+              </button>
               <input
                 id="mintInput"
                 class="input-number btn"
@@ -140,7 +138,9 @@
                 min="1"
                 max="5"
               />
-              <button class="input-number-increment btn" id="mintIncrement">+</button>
+              <button class="input-number-increment btn" id="mintIncrement">
+                +
+              </button>
             </span>
             <button id="setQtyMax" class="btn">SET MAX</button>
           </div>
@@ -172,43 +172,8 @@
 
     <div id="spinner" class="dot-spin"></div>
 
-    <div class="splide">
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li class="splide__slide">
-            <img src="images/slider/0.png" />
-          </li>
-          <li class="splide__slide">
-            <img src="images/slider/1.png" />
-          </li>
-          <li class="splide__slide">
-            <img src="images/slider/2.png" />
-          </li>
-          <li class="splide__slide">
-            <img src="images/slider/3.png" />
-          </li>
-          <li class="splide__slide">
-            <img src="images/slider/4.png" />
-          </li>
-          <li class="splide__slide">
-            <img src="images/slider/5.png" />
-          </li>
-          <li class="splide__slide">
-            <img src="images/slider/6.png" />
-          </li>
-          <li class="splide__slide">
-            <img src="images/slider/7.png" />
-          </li>
-          <li class="splide__slide">
-            <img src="images/slider/8.png" />
-          </li>
-        </ul>
-      </div>
-    </div>
-
     <script src="js/metamask-onboarding.bundle.js"></script>
     <script src="js/web3.min.js"></script>
-    <script src="js/splide.min.js"></script>
     <script src="js/constants.js"></script>
     <script src="js/abi.js"></script>
     <script src="js/countdown.js"></script>
