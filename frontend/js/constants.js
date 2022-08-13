@@ -1,10 +1,11 @@
 const contractAddress = "0xd7FAFebd379d70ea6bAf987e66E7e1FB7F54c8C2"; // Replace with your own contract address
 const chain = "rinkeby"; // rinkeby, polygon, or ethereum
 
-const welcome_h1 = "Welcome to the Yackers NFT Project";
+const welcome_h1 = "Yackers NFT Project";
 const welcome_h2 = "Connect to MetaMask to Get Started";
 const welcome_h2_metamask_not_installed = "Install MetaMask to Get Started";
-const welcome_p = "The Yackers NFT Project 🔥";
+const welcome_p =
+  "The Yackers NFT Project is a simple NFT collection that has been made with almost 100 different layer. The project has been made possible thanks to the clear instruction of this tutorial https://youtube.com/codestackr. The project rely on the Polygon chain.";
 const h1_presale_coming_soon = "NFT Drop Coming Soon!";
 const h1_presale_mint = "Pre-Sale Minting Open!";
 const h1_public_mint = "Public Minting Open!";

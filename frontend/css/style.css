@@ -26,9 +26,14 @@ body {
   background-color: var(--bg-color);
   display: flex;
   flex-flow: column;
-  height: 100vh;
+  /* height: 100vh; */
   color: var(--font-color);
   font-family: var(--font-primary);
+}
+
+h1 {
+  margin: 2rem 0;
+  font-size: 3.5rem;
 }
 
 .container {
@@ -38,7 +43,7 @@ body {
   margin: 0 auto;
   padding: 1rem 2rem;
   justify-content: center;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* HEADER */
@@ -67,13 +72,52 @@ header .container {
 
 /* NOT CONNECTED */
 .not-connected {
-  align-items: center;
+  /* align-items: center; */
   height: 100%;
   text-align: center;
   margin: auto;
-  opacity: 0;
-  transform: translateY(10vh);
+  /* opacity: 0; */
+  /* transform: translateY(10vh); */
   transition: all 0.5s ease-in-out;
+}
+.trait-cards {
+  margin: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.traits {
+  /* align-items: center; */
+  text-align: center;
+  margin: auto;
+  /* opacity: 0; */
+  /* transform: translateY(10vh); */
+  transition: all 0.5s ease-in-out;
+}
+
+.trait-card {
+  border: black;
+  border-style: dotted;
+  border-radius: 1rem;
+  padding: 2rem 0rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.trait-card .img {
+  margin: auto;
+  width: max-content;
+}
+
+.trait-card p {
+  font-size: 1.5rem;
+}
+
+.repartition {
+  text-align: center;
 }
 
 .show-not-connected {
@@ -82,21 +126,19 @@ header .container {
 }
 
 .not-connected h1 {
-  /* text-shadow: 2px 2px 0 var(--accent-color); */
-  /* font-style: italic; */
   margin: 2rem 0;
   font-size: 3.5rem;
 }
 
-.not-connected p {
+p {
   font-size: 1.1rem;
   font-family: var(--font-secondary);
   line-height: 1.8;
 }
 
-.not-connected a {
+a {
   text-decoration: none;
-  color: var(--accent-color);
+  color: var(--font-color);
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -109,7 +151,6 @@ header .container {
   background: var(--btn-bg-color);
   color: var(--accent-color);
   font-family: var(--font-secondary);
-  /* font-style: italic; */
   font-weight: bold;
   font-size: 1rem;
   text-align: center;
@@ -140,8 +181,8 @@ header .container {
   padding: 1.5rem 3rem;
 }
 
-.mainImage img {
-  width: 256px;
+.not-connected img {
+  width: 25%;
 }
 
 /* CARD */
@@ -154,13 +195,13 @@ header .container {
   box-shadow: var(--card-shadow);
   /* padding: 5rem; */
   margin-bottom: 2rem;
-  opacity: 0;
+  /* opacity: 0; */
   /* transform: translateX(100vw); */
   transition: all 0.5s ease-in-out;
 }
 
 .show-card {
-  opacity: 1;
+  /* opacity: 1; */
   /* transform: translateX(0); */
 }
 
@@ -345,7 +386,7 @@ section {
   .not-connected {
     background-color: var(--bg-color-transparent);
     border-radius: 5px;
-    padding: 2rem;
+    /* padding: 2rem; */
     margin: 0 auto;
   }
   .countdown ul {
