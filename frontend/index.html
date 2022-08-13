@@ -60,76 +60,13 @@
     </header>
 
     <section class="container not-connected">
+      <div id="spinner" class="dot-spin"></div>
       <div>
         <h2 id="welcomeH2">Connect to MetaMask to Get Started</h2>
-        <h1 id="welcomeH1">Yackers NFT Project</h1>
-        <img src="images/anim.gif" />
-        <br />
-        <br />
-        <p id="welcomeP">
-          The Yackers NFT Project is a simple NFT collection that has been made
-          with almost 100 different layer. The project has been made possible
-          thanks to the clear instruction of this youtube channel
-          <a
-            href="https://youtube.com/codestackr"
-            target="_blank"
-            rel="noopener noreferrer"
-            >codeSTACKr</a
-          >. The project rely on the Polygon chain.
-        </p>
       </div>
     </section>
 
-    <section class="container repartition">
-      <div>
-        <h1>Repartition</h1>
-        <p>
-          There is a total of <b>1 000</b> different Yacks. They have multitude
-          of different traits but only <b>6</b> of them are made of the
-          <b>Rares</b> trait. Do you have enough luck to get them? 🍀
-        </p>
-      </div>
-    </section>
-    <section class="container traits">
-      <div>
-        <h1>Traits</h1>
-        <p>
-          The Yackers have differents traits that makes each one of them unique.
-        </p>
-
-        <div class="trait-cards">
-          <div class="trait-card">
-            <img src="images/slider/glass.png" />
-            <p>Glasses</p>
-          </div>
-
-          <div class="trait-card">
-            <img src="images/slider/hat.png" />
-            <p>Hats</p>
-          </div>
-          <div class="trait-card">
-            <img src="images/slider/makeup.png" />
-            <p>Make Up</p>
-          </div>
-
-          <div class="trait-card">
-            <img src="images/slider/talisment.png" />
-            <p>Talisments</p>
-          </div>
-
-          <div class="trait-card">
-            <img src="images/slider/teeth.png" />
-            <p>Teeths</p>
-          </div>
-          <div class="trait-card">
-            <img src="images/slider/tshirt.png" />
-            <p>Tshirts</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="container">
+    <section class="container hidden">
       <div class="countdown card">
         <div id="countdown">
           <ul class="count-down" data-date="">
@@ -225,7 +162,74 @@
       </div>
     </section>
 
-    <div id="spinner" class="dot-spin"></div>
+    <section class="container description">
+      <div>
+        <h1 id="welcomeH1">Yackers NFT Project</h1>
+        <img src="images/anim.gif" />
+        <br />
+        <br />
+        <p id="welcomeP">
+          The Yackers NFT Project is a simple NFT collection that has been made
+          with almost 100 different layer. The project has been made possible
+          thanks to the clear instruction of this youtube channel
+          <a
+            href="https://youtube.com/codestackr"
+            target="_blank"
+            rel="noopener noreferrer"
+            >codeSTACKr</a
+          >. The project rely on the Polygon chain.
+        </p>
+      </div>
+    </section>
+
+    <section class="container repartition">
+      <div>
+        <h1>Repartition</h1>
+        <p>
+          There is a total of <b>1 000</b> different Yacks. They have multitude
+          of different traits but only <b>6</b> of them are made of the
+          <b>Rares</b> trait. Do you have enough luck to get them? 🍀
+        </p>
+      </div>
+    </section>
+    <section class="container traits">
+      <div>
+        <h1>Traits</h1>
+        <p>
+          The Yackers have differents traits that makes each one of them unique.
+        </p>
+
+        <div class="trait-cards">
+          <div class="trait-card">
+            <img src="images/slider/glass.png" />
+            <p>Glasses</p>
+          </div>
+
+          <div class="trait-card">
+            <img src="images/slider/hat.png" />
+            <p>Hats</p>
+          </div>
+          <div class="trait-card">
+            <img src="images/slider/makeup.png" />
+            <p>Make Up</p>
+          </div>
+
+          <div class="trait-card">
+            <img src="images/slider/talisment.png" />
+            <p>Talisments</p>
+          </div>
+
+          <div class="trait-card">
+            <img src="images/slider/teeth.png" />
+            <p>Teeths</p>
+          </div>
+          <div class="trait-card">
+            <img src="images/slider/tshirt.png" />
+            <p>Tshirts</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="js/metamask-onboarding.bundle.js"></script>
     <script src="js/web3.min.js"></script>
