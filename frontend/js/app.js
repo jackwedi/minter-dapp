@@ -4,7 +4,7 @@ let accounts;
 window.addEventListener("DOMContentLoaded", async () => {
   const welcomeH1 = document.getElementById("welcomeH1");
   const welcomeH2 = document.getElementById("welcomeH2");
-  const welcomeP = document.getElementById("welcomeP");
+  // const welcomeP = document.getElementById("welcomeP");
 
   welcomeH1.innerText = welcome_h1;
   welcomeH2.innerText = welcome_h2_metamask_not_installed;
@@ -38,10 +38,7 @@ const updateConnectStatus = async () => {
   const onboardButton = document.getElementById("connectWallet");
   const notConnected = document.querySelector(".not-connected");
   const spinner = document.getElementById("spinner");
-  console.log(
-    !MetaMaskOnboarding.isMetaMaskInstalled(),
-    accounts && accounts.length > 0
-  );
+
   if (!MetaMaskOnboarding.isMetaMaskInstalled()) {
     // HIDE SPINNER
     spinner.classList.add("hidden");
@@ -62,7 +59,7 @@ const updateConnectStatus = async () => {
     notConnected.classList.remove("show-not-connected");
     notConnected.classList.add("hidden");
     // SHOW SPINNER
-    // spinner.classList.remove("hidden");
+    spinner.classList.remove("hidden");
     window.contract = new web3.eth.Contract(abi, contractAddress);
     loadInfo();
   } else {
