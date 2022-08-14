@@ -44,6 +44,7 @@ h1 {
   padding: 1rem 2rem;
   justify-content: center;
   /* overflow: hidden; */
+  transition: all 0.5s ease-in-out;
 }
 
 /* HEADER */
@@ -76,27 +77,21 @@ header .container {
   height: 100%;
   text-align: center;
   margin: auto;
-  /* opacity: 0; */
+  opacity: 0;
   /* transform: translateY(10vh); */
   transition: all 0.5s ease-in-out;
 }
 
 .description {
-  /* align-items: center; */
   height: 100%;
   text-align: center;
   margin: auto;
-  /* opacity: 0; */
-  /* transform: translateY(10vh); */
   transition: all 0.5s ease-in-out;
 }
 
 .traits {
-  /* align-items: center; */
   text-align: center;
   margin: auto;
-  /* opacity: 0; */
-  /* transform: translateY(10vh); */
   transition: all 0.5s ease-in-out;
 }
 
@@ -204,16 +199,17 @@ a {
   border-radius: 5px;
   border: 3px solid var(--accent-color);
   box-shadow: var(--card-shadow);
-  /* padding: 5rem; */
   margin-bottom: 2rem;
-  /* opacity: 0; */
-  /* transform: translateX(100vw); */
+  opacity: 0;
   transition: all 0.5s ease-in-out;
 }
 
+.countdown.card {
+  transition-delay: 1s;
+}
+
 .show-card {
-  /* opacity: 1; */
-  /* transform: translateX(0); */
+  opacity: 1;
 }
 
 /* COUNTDOWN SECTION */
@@ -271,8 +267,6 @@ section {
 }
 
 .countdown h1 {
-  /* text-shadow: 2px 2px 0 var(--accent-color); */
-  /* font-style: italic; */
   margin: 2rem 0;
   font-size: 3.5rem;
   text-align: center;
@@ -380,7 +374,7 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
-  /* transform: translate(-50%, -50%) scale(3); */
+  transform: translate(-50%, -50%) scale(3);
 }
 
 /* MEDIA QUERIES */
@@ -397,7 +391,6 @@ section {
   .not-connected {
     background-color: var(--bg-color-transparent);
     border-radius: 5px;
-    /* padding: 2rem; */
     margin: 0 auto;
   }
   .countdown ul {
