@@ -210,13 +210,13 @@ async function loadInfo() {
 
   // HIDE SPINNER
   spinner.classList.add("hidden");
-
   // SHOW CARD
+  const countdownCard = document.querySelector(".countdown");
+  countdownCard.classList.remove("hidden");
+
   setTimeout(() => {
-    const countdownCard = document.querySelector(".countdown");
     countdownCard.classList.add("show-card");
-    countdownCard.classList.remove("hidden");
-  }, 1000);
+  }, 500);
 
   let priceType = "";
   if (chain === "rinkeby" || chain === "ethereum") {
