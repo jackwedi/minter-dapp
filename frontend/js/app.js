@@ -4,13 +4,9 @@ let accounts;
 window.addEventListener("DOMContentLoaded", async () => {
   const welcomeH1 = document.getElementById("welcomeH1");
   const welcomeH2 = document.getElementById("welcomeH2");
-  // const welcomeP = document.getElementById("welcomeP");
 
   welcomeH1.innerText = welcome_h1;
   welcomeH2.innerText = welcome_h2_metamask_not_installed;
-  // welcomeP.innerHTML = welcome_p;
-  const countdown = document.querySelector(".countdown");
-  countdown.classList.add("hidden");
 
   if (window.ethereum) {
     window.web3 = new Web3(window.ethereum);
@@ -39,7 +35,6 @@ const updateConnectStatus = async () => {
   const onboarding = new MetaMaskOnboarding();
   const onboardButton = document.getElementById("connectWallet");
   const notConnected = document.querySelector(".not-connected");
-  const countdown = document.querySelector(".countdown");
   const spinner = document.getElementById("spinner");
 
   if (!MetaMaskOnboarding.isMetaMaskInstalled()) {
@@ -64,8 +59,6 @@ const updateConnectStatus = async () => {
     spinner.classList.remove("hidden");
     window.contract = new web3.eth.Contract(abi, contractAddress);
     await loadInfo();
-    countdown.classList.remove("hidden");
-    countdown.classList.add("show-card");
   } else {
     welcomeH2.innerText = welcome_h2;
     onboardButton.innerText = "Connect MetaMask!";
@@ -219,10 +212,11 @@ async function loadInfo() {
   spinner.classList.add("hidden");
 
   // SHOW CARD
-  // setTimeout(() => {
-  //   const countdownCard = document.querySelector(".countdown");
-  //   countdownCard.classList.add("show-card");
-  // }, 1000);
+  setTimeout(() => {
+    const countdownCard = document.querySelector(".countdown");
+    countdownCard.classList.add("show-card");
+    countdownCard.classList.remove("hidden");
+  }, 1000);
 
   let priceType = "";
   if (chain === "rinkeby" || chain === "ethereum") {
