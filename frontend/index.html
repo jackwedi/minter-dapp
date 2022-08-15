@@ -26,6 +26,11 @@
     />
     <link rel="manifest" href="images/x-icon/site.webmanifest" />
     <link rel="stylesheet" href="css/three-dots.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -193,41 +198,54 @@
       </div>
     </section>
     <section class="container traits">
-      <div>
-        <h1>Traits</h1>
-        <p>
-          The Yackers have differents traits that makes each one of them unique.
-        </p>
+      <h1>Traits</h1>
+      <p>
+        The Yackers have differents traits that makes each one of them unique.
+      </p>
 
-        <div class="trait-cards">
-          <div class="trait-card">
-            <img src="images/slider/glass.png" />
-            <p>Glasses</p>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="trait-card">
+              <img src="images/slider/glass.png" />
+              <p>Glasses</p>
+            </div>
           </div>
-
-          <div class="trait-card">
-            <img src="images/slider/hat.png" />
-            <p>Hats</p>
+          <div class="swiper-slide">
+            <div class="trait-card">
+              <img src="images/slider/hat.png" />
+              <p>Hats</p>
+            </div>
           </div>
-          <div class="trait-card">
-            <img src="images/slider/makeup.png" />
-            <p>Make Up</p>
+          <div class="swiper-slide">
+            <div class="trait-card">
+              <img src="images/slider/makeup.png" />
+              <p>Make Up</p>
+            </div>
           </div>
-
-          <div class="trait-card">
-            <img src="images/slider/talisment.png" />
-            <p>Talisments</p>
+          <div class="swiper-slide">
+            <div class="trait-card">
+              <img src="images/slider/talisment.png" />
+              <p>Talisments</p>
+            </div>
           </div>
-
-          <div class="trait-card">
-            <img src="images/slider/teeth.png" />
-            <p>Teeths</p>
+          <div class="swiper-slide">
+            <div class="trait-card">
+              <img src="images/slider/teeth.png" />
+              <p>Teeths</p>
+            </div>
           </div>
-          <div class="trait-card">
-            <img src="images/slider/tshirt.png" />
-            <p>Tshirts</p>
+          <div class="swiper-slide">
+            <div class="trait-card">
+              <img src="images/slider/tshirt.png" />
+              <p>Tshirts</p>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="swiper mySwiper nav">
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </section>
 
@@ -236,6 +254,21 @@
     <script src="js/constants.js"></script>
     <script src="js/abi.js"></script>
     <script src="js/countdown.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+        autoplay: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
     <script src="js/app.js"></script>
   </body>
 </html>
