@@ -66,7 +66,6 @@ const updateConnectStatus = async () => {
     await loadInfo();
     countdown.classList.remove("hidden");
     countdown.classList.add("show-card");
-    countdown.classList.remove("hidden");
   } else {
     welcomeH2.innerText = welcome_h2;
     onboardButton.innerText = "Connect MetaMask!";
