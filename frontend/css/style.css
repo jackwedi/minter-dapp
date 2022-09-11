@@ -468,7 +468,7 @@ section {
   width: 90%;
 }
 
-#app {
+#slot-machine {
   margin: 2rem 0;
   text-align: center;
   display: flex;

@@ -158,6 +158,7 @@ async function loadInfo() {
   const mintContainer = document.getElementById("mintContainer");
   const mintButton = document.getElementById("mintButton");
   const spinner = document.getElementById("spinner");
+  const slotMachine = document.getElementById("slot-machine-container");
 
   let startTime = "";
   if (publicMintActive) {
@@ -202,6 +203,10 @@ async function loadInfo() {
     subHeading.innerText = h2_presale_coming_soon;
     mainText.innerText = p_presale_coming_soon;
     actionButton.innerText = button_presale_coming_soon;
+  }
+
+  if (!publicMintActive) {
+    slotMachine.classList.remove("hidden");
   }
 
   const clockdiv = document.getElementById("countdown");
